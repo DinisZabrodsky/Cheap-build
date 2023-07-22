@@ -2,10 +2,10 @@
   "name": "cheap-build",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DinisZabrodsky.github.io/Cheap-build",
+  "homepage": "https://DinisZabrodsky.github.io/cheap-build",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Cheap-build/"
+    "build": "parcel build src/*.html --public-url /cheap-build/"
   },
   "repository": {
     "type": "git",
