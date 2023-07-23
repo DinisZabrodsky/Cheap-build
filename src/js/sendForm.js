@@ -1,4 +1,5 @@
 import { sendMessageTelegramBot } from "./api/sendTelegramBot";
+import { toggleModal } from "./modal";
 
 
 const form = document.querySelector('#modalForm');
@@ -20,6 +21,8 @@ async function submitForm (event) {
         name.value = "";
         tel.value = "";
         telegram.value = "";
+
+        toggleModal()
 
     }).catch((err) => {
         console.log('sadadasdad')
