@@ -9,19 +9,28 @@
 
         <h2 class="modalTitel">Залиште свої дані, ми з вам зв'яжемось</h2>
 
-        <form action="form" class="modalForm">
+        <form action="form" class="modalForm" id="modalForm">
             <ul class="modalFormList">
                 <li class="modalFormListItem">
                     <label for="formName">Ім'я</label>
                     <input id="formName" name="name" type="text" required>
+                    <svg class="modalFormListItemSvg">
+                        <use href="./images/mobi-menu.svg#icon-person"></use>
+                    </svg>
                 </li>
                 <li class="modalFormListItem">
                     <label for="formTel">Телефон</label>
                     <input id="formTel" name="tel" type="tel" required>
+                    <svg class="modalFormListItemSvg">
+                        <use href="./images/mobi-menu.svg#icon-phone"></use>
+                    </svg>
                 </li>
                 <li class="modalFormListItem">
                     <label for="formTelegram">Telegram</label>
                     <input id="formTelegram" name="telegram" type="text">
+                    <svg class="modalFormListItemSvg">
+                        <use href="./images/mobi-menu.svg#icon-telegram"></use>
+                    </svg>
                 </li>
             </ul>
 
