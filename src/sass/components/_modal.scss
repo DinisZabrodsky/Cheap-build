@@ -27,7 +27,7 @@
     max-width: 52h0px;
     min-height: 300px;
 
-    padding: 46px 15px;
+    padding: 46px 20px;
 
     border-radius: 5px;
     background-color: #fff;
@@ -107,7 +107,57 @@
 
             border-radius: 4px;
             border: 1px solid rgba(33, 33, 33, 0.20);
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            outline: 0;
+
+            padding: 10px;
+
+            &:focus {
+                border: 1px solid $prymari-color-akcent;
+            }
+        }
+
+        & > label {
+    
+            color: #757575;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+
+            letter-spacing: 0.1;
+            margin-bottom: 4px;
         }
    }
+}
+
+.modalFormButton {
+    display: block;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    width: 170px;
+    height: 45px;
+
+    background-color: #0c6bb8;;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    &:hover, &:focus {
+        background-color: #188CE8;
+        cursor: pointer;
+    }
 }
 
