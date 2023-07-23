@@ -2,10 +2,10 @@
   "name": "cheap-build",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DinisZabrodsky.github.io/cheap-build",
+  "homepage": "https://DinisZabrodsky.github.io/Cheap-build",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /cheap-build/"
+    "build": "parcel build src/*.html --public-url /Cheap-build/"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

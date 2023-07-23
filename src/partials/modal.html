@@ -1,0 +1,31 @@
+<!-- MODAL -->
+<div class="bacdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-button" data-modal-close>
+            <svg class="modal-button-svg">
+                <use href="./images/mobi-menu.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <h2 class="modalTitel">Залиште свої дані, ми з вам зв'яжемось</h2>
+
+        <form action="form" class="modalForm">
+            <ul class="modalFormList">
+                <li class="modalFormListItem">
+                    <label for="formName">Ім'я</label>
+                    <input id="formName" name="name" type="text" required>
+                </li>
+                <li class="modalFormListItem">
+                    <label for="formTel">Телефон</label>
+                    <input id="formTel" name="tel" type="number" required>
+                </li>
+                <li class="modalFormListItem">
+                    <label for="formTelegram">Telegram</label>
+                    <input id="formTelegram" name="telegram" type="text">
+                </li>
+            </ul>
+
+            <button class="modalFormButton" type="submit">Відтправити</button>
+        </form>
+    </div>  
+</div>

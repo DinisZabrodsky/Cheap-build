@@ -1,0 +1,204 @@
+.header {
+    background-color: $prymari-bacground-color;
+}
+
+.header-conteiner {
+
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 425px) {
+        width: 425px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 960px) {
+        min-width: 960px;
+        max-width: 1200px;
+    }
+}
+
+
+
+.header-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $prymari-color-akcent;
+
+    &-span {
+        color: $prymari-color;
+    }
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    flex-grow: 1;
+    justify-content: space-between;
+    
+
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+.header-main {
+    display: flex;
+    gap: 15px;
+}
+
+.header-main-element a, .header-contact-element a {
+    display: block;
+    position: relative;
+
+
+    color: $prymari-color;
+    transition: color 250ms linear;
+
+    font-family: "Roboto Flex" ,sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+
+    &:hover, &:focus {
+        color: $prymari-color-akcent;
+    }
+
+}
+
+.header-main-element a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-main-element a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: $prymari-color-akcent;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 250ms linear;
+
+}
+
+.header-main-element a:hover::after,
+.header-main-element a:focus::after {
+    transform: scaleX(100%);
+}
+
+.header-contact {
+    margin-left: auto;
+
+    @media screen and (min-width: 960px) {
+        display: flex;
+        gap: 15px;
+    }
+} 
+
+.header-contact-element a {
+    color: $prymari-color-three;
+
+
+    @media screen and (max-width: 959px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    @media screen and (min-width: 960px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        font-size: 14px;
+    }
+
+
+}
+
+.menu-toggle {
+
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    &-svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+
+    transform: translateX(120%);
+    transition: transform 250ms ease-in-out;
+
+    &-blok {
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+        max-width: 425px;
+        height: 100vh;
+
+        border: 1px solid red;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: -3px;
+    right: 15px;
+    color: #fff;
+
+}

@@ -1,0 +1,31 @@
+.portfolio {
+    &-title {
+        text-align: center;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &-element {
+            flex-basis: calc((100% - 30px) / 4);
+            width: 285px;
+            height: 345px;
+
+            transition: transform 250ms linear;
+            cursor: pointer;
+
+            & > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:hover, &:focus {
+                transform: scale(1.03);
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.services {
+
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #d4d4d4,
+        #d4d4d4 10px,
+        #e8e8e8 10px,
+        #e8e8e8 20px
+    );
+
+    &-title {
+        text-align: center;
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+
+    
+
+    &-element {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        overflow: hidden;
+        cursor: pointer;
+
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.5), 1px 3px 3px rgba(0, 0, 0, 0.12), 1px 5px 7px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: box-shadow 250ms linear;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 10px) / 2);
+
+
+            &:last-child {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+        @media screen and (min-width: 960px) {
+            flex-basis: calc((100% - 20px) / 3);
+        }
+
+        &:hover, &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &-bloc {
+        position: relative;
+
+        display: block;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            max-height: 480px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-height: 480px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 959px) {
+            max-height: 445px;
+        }
+        @media screen and (min-width: 960px) and (max-width: 1100px) {
+            max-height: 435px;
+        }
+
+        & > img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        
+            @media screen and (min-width: 960px) and (max-width: 1100px) {
+                height: 100%;
+                width: 110%;
+
+            }
+        }
+
+        &-title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            display: block;
+            width: 100%;
+            // height: 15.5%;
+
+            text-align: center;
+            padding: 17px 0;
+
+            
+            background-color: rgba(47, 48, 58, 0.8);
+
+            & > h3 {
+                margin: 0;
+                color: #fff;
+
+                font-size: 18px;
+            }
+        }
+
+        &-texst {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+
+            display: block;
+            width: 100%;
+            height: 87.9%;
+            @media screen and (min-width: 768px) {
+                height: 86.7%;
+            }
+
+            @media screen and (min-width: 960px) {
+                height: 86.4%;
+            }
+
+            @media screen and (min-width: 1140px) {
+                height: 87.9%;
+            }
+
+            padding: 20px;
+            background-color: rgba(33, 150, 243, 0.9);
+
+            transform: translateX(-100%);
+            transition: transform 250ms linear;
+
+            .services-list-element:hover  &,
+            .services-list-element:focus  & {
+                transform: translateY(0);
+            }
+
+            & > p {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+}
+
