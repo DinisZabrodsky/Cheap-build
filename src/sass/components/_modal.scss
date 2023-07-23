@@ -116,6 +116,10 @@
             padding: 9px;
             padding-left: 28px;
 
+            &::placeholder {
+                color: rgba(117, 117, 117, 0.5);
+            }
+
             &:focus {
                 border: 1px solid $prymari-color-akcent;
 
